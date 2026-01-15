@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "LLM Dataset Collector",
+  "version": "1.0.0",
+  "description": "Scrapes conversation logs from AI chatbots into JSONL format.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*",
+    "https://claude.ai/*",
+    "https://chat.deepseek.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Dataset Controls"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*",
+        "https://chat.deepseek.com/*"
+      ],
+      "js": [
+        "content_scripts/selectors.js",
+        "content_scripts/storage-manager.js",
+        "content_scripts/scraper.js",
+        "content_scripts/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
