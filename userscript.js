@@ -7,6 +7,8 @@
 // @match        https://chatgpt.com/*
 // @match        https://gemini.google.com/*
 // @match        https://claude.ai/*
+// @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/blob/main/userscript.js
+// @updateURL    https://github.com/Mulooooo/ai-dataset-collector/blob/main/userscript.js
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_setClipboard
@@ -230,10 +232,10 @@ const LOGO_BASE64 = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zP
                 transition: transform 0.3s;
                 /* Centrage parfait en mode bulle */
                 position: absolute;
-                left: 10px; 
+                left: 10px;
                 top: 10px;
             }
-            
+
             #ai-collector-panel:hover .ai-logo {
                 transform: scale(1);
             }
@@ -332,7 +334,7 @@ const LOGO_BASE64 = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zP
         // L'image du logo doit être définie dans LOGO_BASE64
         // Si tu l'as perdue, remets la longue chaîne Base64 du script précédent
         // Sinon, mets une URL placeholder pour tester : "https://via.placeholder.com/30"
-        
+
         div.innerHTML = `
             <div class="ai-header">
                 <img src="${typeof LOGO_BASE64 !== 'undefined' ? LOGO_BASE64 : ''}" class="ai-logo">
