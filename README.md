@@ -1,21 +1,23 @@
-# AI Dataset Collector - Installation du Userscript
+[🇫🇷 README FR](README.fr.md)
 
-Ce guide explique comment installer manuellement le userscript **AI Dataset Collector** en utilisant la fonctionnalité de mise à jour automatique.
+# AI Dataset Collector - Userscript Installation
 
-## 📋 Prérequis
+This guide explains how to manually install the **AI Dataset Collector** userscript using the automatic update feature.
 
-Avant de commencer, assurez-vous d'avoir installé une extension de gestion de userscripts sur votre navigateur.
+## 📋 Prerequisites
+
+Before starting, ensure that you have installed a userscript manager extension on your browser.
 
 ## 🚀 Installation
 
-L'installation se fait en créant un "stub" (un script vide) qui va ensuite télécharger automatiquement le code source depuis GitHub.
+Installation is performed by creating a "stub" (a placeholder script) that will automatically download the source code from GitHub.
 
-### Étape 1 : Créer un nouveau script
-1.  Ouvrez le tableau de bord de votre gestionnaire de script.
-2.  Ajoutez un nouveau script.
+### Step 1: Create a new script
+1. Open your script manager dashboard.
+2. Add a new script.
 
-### Étape 2 : Configurer la source
-Effacez tout le code présent par défaut dans l'éditeur et copiez-collez **uniquement** les lignes suivantes :
+### Step 2: Configure the source
+Clear all default code present in the editor and copy-paste **only** the following lines:
 
 ```javascript
 // ==UserScript==
@@ -25,3 +27,5 @@ Effacez tout le code présent par défaut dans l'éditeur et copiez-collez **uni
 // @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/raw/refs/heads/main/userscript.js
 // ==/UserScript==
 ```
+
+Tested with Violentmonkey on Firefox and LibreWolf, and Tampermonkey on Chrome and Opera/OperaGX.
