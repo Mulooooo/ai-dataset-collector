@@ -22,5 +22,6 @@ Effacez tout le code présent par défaut dans l'éditeur et copiez-collez **uni
 // @name         AI Dataset Collector
 // @namespace    http://tampermonkey.net/
 // @version      AI Dataset Collector Installer
-// @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/blob/main/userscript.js
+// @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/raw/refs/heads/main/userscript.js
 // ==/UserScript==
+```

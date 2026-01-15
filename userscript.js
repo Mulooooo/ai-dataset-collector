@@ -7,8 +7,8 @@
 // @match        https://chatgpt.com/*
 // @match        https://gemini.google.com/*
 // @match        https://claude.ai/*
-// @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/blob/main/userscript.js
-// @updateURL    https://github.com/Mulooooo/ai-dataset-collector/blob/main/userscript.js
+// @downloadURL  https://github.com/Mulooooo/ai-dataset-collector/raw/refs/heads/main/userscript.js
+// @updateURL    https://github.com/Mulooooo/ai-dataset-collector/raw/refs/heads/main/userscript.js
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_setClipboard
